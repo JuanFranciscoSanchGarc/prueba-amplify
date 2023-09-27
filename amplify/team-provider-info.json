@@ -16,7 +16,7 @@
       "function": {
         "revisarRiesgo": {
           "deploymentBucketName": "amplify-pruebahackathon-dev-162235-deployment",
-          "s3Key": "amplify-builds/revisarRiesgo-6f766578557a2f516a2f-build.zip"
+          "s3Key": "amplify-builds/revisarRiesgo-424b5532504e66693269-build.zip"
         }
       },
       "auth": {

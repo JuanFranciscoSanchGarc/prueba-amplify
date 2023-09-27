@@ -1,18 +1,13 @@
 import React, { useRef } from "react";
 import Webcam from "react-webcam";
-import axios from "axios";
+import { Storage } from 'aws-amplify';
 
 const WebcamCapture = () => {
   const webcamRef = useRef(null);
 
   const capture = React.useCallback(async () => {
     const imageSrc = webcamRef.current.getScreenshot();
-    const url = `https://8dyid462k8.execute-api.eu-west-1.amazonaws.com/main/revisarRiesgo`;
-    const response = await axios.post(url, {
-      fileKey: "manolo",
-      type: "image/jpeg",
-    });
-    console.log("Response from Lambda:", response.data);
+    Storage.put("manolo.txt", "Hola esto es una prueba de manolo");
   }, [webcamRef]);
 
   return (
