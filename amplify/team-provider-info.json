@@ -9,7 +9,22 @@
       "UnauthRoleName": "amplify-pruebahackathon-dev-162235-unauthRole",
       "StackName": "amplify-pruebahackathon-dev-162235",
       "StackId": "arn:aws:cloudformation:us-west-1:693194735448:stack/amplify-pruebahackathon-dev-162235/4fccbfe0-5d41-11ee-a6ef-067a268ebc55",
-      "AmplifyAppId": "d13hvo52hwov0v"
+      "AmplifyAppId": "d13hvo52hwov0v",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-pruebahackathon-dev-162235-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "function": {
+        "revisarRiesgo": {
+          "deploymentBucketName": "amplify-pruebahackathon-dev-162235-deployment",
+          "s3Key": "amplify-builds/revisarRiesgo-6f766578557a2f516a2f-build.zip"
+        }
+      },
+      "auth": {
+        "pruebahackathon": {}
+      },
+      "api": {
+        "apiRiesgos": {}
+      }
     }
   }
 }
