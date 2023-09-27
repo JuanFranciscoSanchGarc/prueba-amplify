@@ -1,6 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
 import "./components/ButtonLambda";
+
 import ButtonLambda from "./components/ButtonLambda";
 
 const App = () => {
