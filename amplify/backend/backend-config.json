@@ -65,5 +65,12 @@
         }
       ]
     }
+  },
+  "storage": {
+    "riesgosFotos": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3"
+    }
   }
 }
