@@ -24,6 +24,9 @@
       },
       "api": {
         "apiRiesgos": {}
+      },
+      "storage": {
+        "riesgosFotos": {}
       }
     }
   }

@@ -1,8 +1,15 @@
 import React, { useRef } from "react";
 import Webcam from "react-webcam";
-import { Storage } from "@aws-amplify/storage"
+import { Storage } from "@aws-amplify/storage";
+import config from "../aws-exports";
 
 const WebcamCapture = () => {
+  Storage.configure({
+    region: config.aws_user_files_s3_bucket_region,
+    bucket: config.aws_user_files_s3_bucket,
+    identityPoolId: config.aws_cognito_identity_pool_id,
+    level: "public",
+  });
   const webcamRef = useRef(null);
 
   const capture = React.useCallback(async () => {
