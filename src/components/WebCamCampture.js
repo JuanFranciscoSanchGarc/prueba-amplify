@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Webcam from "react-webcam";
-import { Storage } from 'aws-amplify';
+import { Storage } from "@aws-amplify/storage"
 
 const WebcamCapture = () => {
   const webcamRef = useRef(null);
